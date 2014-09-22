@@ -1,4 +1,6 @@
+$main-font: 'Syncopate', sans-serif;
 
+$primary-color: #00A0B0;
 
 html {
   z-index: -10;
@@ -24,8 +26,8 @@ header {
 
 h1 {
   font-family: 'Francois One', sans-serif;
-  font-size:35px;
-  color:#00A0B0;
+  font-size: 35px;
+  color: $primary-color;
   opacity: .7;
   float: left;
   padding-top: 50px;
@@ -36,15 +38,15 @@ h1 {
 
 
 h2 {
-  font-family: 'Syncopate', sans-serif;
-  font-size:24px; 
+  font-family: $main-font;
+  font-size: 24px; 
 }
 
 
 #logo{
   padding-top: 40px;
   margin-bottom: 40px;
-  height:150px;
+  height: 150px;
 }
 
 h1#headlogo{
@@ -74,7 +76,7 @@ margin: 0 0 0 30px;
   width: 45%;
   height: 30px;
   text-align: left;
-  float:right;
+  float: right;
   opacity: .70;
   
 }
@@ -87,7 +89,7 @@ margin: 0 0 0 30px;
 }
 
 #nav li {
-  font-family: 'Syncopate', sans-serif;
+  font-family: $main-font;
   font-size: 12px;
   display: inline;
   margin-left: 30px;
@@ -97,7 +99,7 @@ margin: 0 0 0 30px;
 }
 
 #subhead {
-  font-family: 'Syncopate', sans-serif;
+  font-family: $main-font;
   width: 75%;
   background-color: #ffffff;
   float: right;
@@ -111,7 +113,7 @@ margin: 0 0 0 30px;
 #feature {
   width: 72%;
   min-height: 300px;
-  position:relative;
+  position: relative;
   background-color: #ffffff;
   float: right;
   border-radius: 20px 0px 0px 20px;
@@ -119,7 +121,7 @@ margin: 0 0 0 30px;
   text-align: left;
   margin-right: 40px;
   display: inline;
-  padding:30px;
+  padding: 30px;
 }
 
 #feature input{
@@ -129,7 +131,7 @@ margin: 0 0 0 30px;
   padding-left: 20px;
   font-size:15px;
   height: 30px;
-  background:#F0F0F0;
+  background: #F0F0F0;
   border: none;
   border-radius: 10px;
 }
@@ -137,7 +139,7 @@ margin: 0 0 0 30px;
 #feature textarea{
   border: none;
   border-radius: 10px;
-  background:#F0F0F0;
+  background: #F0F0F0;
   width: 50%;
    
 }
@@ -152,24 +154,24 @@ margin: 0 0 0 30px;
 }
 
 #feature select{
-  width:200px;
-  height:30px;
+  width: 200px;
+  height: 30px;
 }
 
 #feature h2{
   font-family: 'Francois One', sans-serif;
   opacity:.7;
-  margin:0 auto;
-  color:#00A0B0;
+  margin: 0 auto;
+  color: $primary-color;
   text-align: left;
 }
 
 #feature h3{
   font-family: 'Francois One', sans-serif;
   font-size: 12px;
-  opacity:.7;
-  margin:0 auto;
-  color:#AAAAAA;
+  opacity: .7;
+  margin: 0 auto;
+  color: #AAAAAA;
   text-align: left;
 }
 
@@ -206,7 +208,7 @@ margin: 0 0 0 30px;
 
 #leftColumn li {
   width: 95%;
-  font-family: 'Syncopate', sans-serif;
+  font-family: $main-font;
   list-style-type: none;
   background: #ffffff;
   padding-bottom: 15px;
@@ -231,29 +233,29 @@ margin: 0 0 0 30px;
 }
 
 input{
-  width:50%;
+  width: 50%;
   border: none;
   font-family: 'Cuprum', sans-serif;
   text-align: center;
-  font-size:15px;
+  font-size: 15px;
   height: 30px;
   border-radius: 10px;
 }
    
 input.submit {
   font-size: 20px;
-  width:200px;
-  border-radius:5px;
+  width: 200px;
+  border-radius: 5px;
   background-color: #F4533A;
   opacity: .80;
 }
 
 p#alert {
-  width:30%;
+  width: 30%;
   margin: 0 auto;
   border-radius: 10px;
   color: #FF3300;
-  font-size:20px;
+  font-size: 20px;
   background-color: white;
 }
 
@@ -277,7 +279,7 @@ a:visited {
 }
 
 a:hover {
-  color: #00A0B0;
+  color: $primary-color;
   text-decoration: none;
 } 
 
