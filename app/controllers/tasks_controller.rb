@@ -9,19 +9,6 @@ class TasksController < ApplicationController
       @tasks = current_user.tasks
       @categories = current_user.categories
     end
-    # @list = {}
-    # @categories.each do |x|
-    #   @list[x.id] = []
-    # end
-    # @tasks.each do |task|
-    #   if task.category_id.nil?
-    #     binding.pry
-    #     @list["Uncategorized"] << task
-    #   else
-    #     binding.pry
-    #     @list[task.category_id] << task
-    #   end
-    # end
   end
 
   def new
