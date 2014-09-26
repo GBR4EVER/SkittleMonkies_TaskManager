@@ -13,18 +13,16 @@
 
 <% if current_user %>
 
-
-<ul class="sortable">
 	<% current_user.tasks.each do |t| %>
   
   
   
-    <li><%= link_to(t.task_name, task_path(t.id))  %></li>
+    <h2><%= link_to(t.task_name, task_path(t.id)) %></h2>
+	<p><%= link_to("New Task", new_task_path, id: "new_link", remote: true) %></p>
+	<p><%= link_to "Edit this Task", edit_task_path(t.id) %></p>
 	<!-- <p>Category:<%# t.category %>, Project:<%# t.project %>, <%# t.status %></p> -->
-  
 
 <% end %>
-</ul>
 <script src="jquery.sortable.min.js"></script>
 <script>
     $('.sortable').sortable();
