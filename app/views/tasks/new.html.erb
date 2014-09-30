@@ -25,8 +25,8 @@
 
 	<%= f.text_area :description, :placeholder => "Description"  %>
 <p>
-	<%= select_tag 'project_id', options_for_select(@projects.map{|project| ["#{project.title}", project.id] }. insert(0, "Select a Service")) %>
-	<%= select_tag 'category_id', options_for_select(@categories.map{|category| ["#{category.name}", category.id] }. insert(0, "Select a Service"))%>
+	<%= select_tag 'project_id', options_for_select(@projects.map{|project| ["#{project.title}", project.id] }. insert(0, "Select a Project")) %>
+	<%= select_tag 'category_id', options_for_select(@categories.map{|category| ["#{category.name}", category.id] }. insert(0, "Select a Category"))%>
 <p>
 	<%= f.submit "Make Task", :class => 'submit' %>
 
